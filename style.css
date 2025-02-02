@@ -39,6 +39,8 @@ Description: Blog
     --dark: #343a40;
 }
 
+/* #################### Common Property #################### */
+
 * {
     margin: 0;
     padding: 0;
@@ -84,4 +86,29 @@ i {
 
 img {
     max-width: var(--max-width);
+    height: auto;
+}
+
+img:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+
+.my_clearfix::after {
+    content: ;
+    clear: both;
+    display: block;
+}
+
+/* #################### Line Clamp #################### */
+.line-clamp4 {
+    display: -webkit-box;
+    overflow: hidden;
+    /* overflow: Taşma varsa gizle. */
+    -webkit-line-clamp: 4;
+    /* -webkit-line-clamp: 4: Dört satır göster */
+    -webkit-box-orient: vertical;
+
 }
