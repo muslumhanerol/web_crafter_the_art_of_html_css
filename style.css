@@ -1,2 +1,72 @@
 /* google fonts crimson text */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/*
+Project made date: 02/02/2025
+Name: Blog
+Semantic Version: v1.0.0
+Description: Blog
+*/
+
+:root {
+    --template-bg: #f9ecec;
+    --template-text-color: #201f1f;
+    --first-navbar-bg: #101111;
+    --max-width: 100%;
+
+    /* Renk Tanımları */
+    --atrasit: #2f2f2f;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*box-sizing: Taşmaları önlemek için */
+
+}
+
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Crimson Text", serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    position: relative;
+    background-color: var(--light);
+    color: var(--template-text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {}
