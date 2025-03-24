@@ -1,72 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <title>Document</title>
     <style>
-        body {
+        body{
             margin: 0;
             padding: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        header {
+        header{
             background-color: #333;
             color: #fff;
             padding: 20px;
         }
-
-        .navbar ul {
+        .navbar ul{
             list-style-type: none;
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
         }
-
-        .navbar ul li {
-            margin: 0 15px;
+        .navbar ul li{
+            margin: 5px 10px;
         }
-
-        .navbar ul li a {
+        .navbar ul li a{
             text-decoration: none;
             color: #fff;
             padding: 8px 16px;
             border-radius: 4px;
             transition: background-color 0.3s ease-in-out;
         }
-
-        .navbar ul li a:hover {
+        .navbar ul li a:hover{
             background-color: antiquewhite;
             color: #333;
         }
-
-        section {
+        section{
             text-align: center;
             margin: 30px;
             padding: 15px;
         }
-
-        .profile-picture img {
+        .profile-picture img{
             width: 300px;
             height: 300px;
             border-radius: 50%;
             transition: transform 0.3s ease-in-out;
         }
-
-        .profile-picture img:hover {
+        .profile-picture img:hover{
             transform: scale(1.1);
         }
-
-        .info-container {
+        .info-container{
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
         }
-
-        .info {
+        .info{
             width: 200px;
             padding: 20px;
             margin: 20px;
@@ -76,29 +68,24 @@
             border-radius: 8px;
             transition: transform 0.3s ease-in-out;
         }
-
-        .info:hover {
+        .info:hover{
             transform: translateY(-10px);
         }
-
-        .project-container {
+        .project-container{
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
         }
-
-        .project-card {
+        .project-card{
             width: 30%;
             margin: 0;
             text-align: center;
             position: relative;
         }
-
-        .project-card img {
+        .project-card img{
             width: 100%;
         }
-
-        .project-overlay {
+        .project-overlay{
             position: absolute;
             top: 0;
             left: 0;
@@ -112,128 +99,101 @@
             opacity: 0;
             transition: opacity 0.3s ease-in-out;
         }
-
-        .project-card:hover .project-overlay {
+        .project-card:hover .project-overlay{
             opacity: 1;
         }
-
-        .project-overlay p {
+        .project-overlay p{
             color: #fff;
             font-size: 16px;
             margin: 0;
         }
-
-        .container {
+        .container{
             max-width: 80%;
             margin: 0 auto;
             padding: 20px;
             text-align: center;
         }
-
-        .card-section {
+        .card-section{
             display: flex;
             justify-content: space-around;
             margin-top: 20px;
         }
-
-        .card {
+        .card{
             width: 30%;
             padding: 10px;
             border: 1px solid #333;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
-        .card-content {
+        .card-content{
             display: flex;
         }
-
-        .card img {
+        .card img{
             width: 100px;
             height: auto;
             border-radius: 3px;
             margin-right: 10px;
         }
-
-        .card-description {
+        .card-description{
             flex: 1;
         }
-
-        .card-description h3 {
+        .card-description h3{
             margin-top: 0;
             font-size: 1.2em;
         }
-
-        .card-description p {
+        .card-description p{
             font-size: 0.9em;
             color: #555;
         }
-
-        footer {
+        footer{
             background-color: #333;
             padding: 10px;
             color: #fff;
             text-align: center;
         }
-
-        @media only screen and (max-width: 480px) {
-            .info {
+        @media only screen and (max-width: 480px){
+            .navbar ul{
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar ul li{
+                margin: 5px 0;
+            }
+            .info{
                 width: 100%;
             }
-
-            .project-card {
+            .project-card{
                 width: 100%;
             }
-
-            .card-section {
+            .card-section{
                 flex-wrap: wrap;
             }
-
-            .card {
+            .card{
                 width: 100%;
                 margin-bottom: 15px;
             }
-
-            .card-content {
+            .card-content{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-
-            .card img {
+            .card img{
                 width: 100%;
                 border-radius: 5px 5px 0 0;
             }
-
-            .card-description {
+            .card-description{
                 padding: 10px;
                 border: 1px solid #333;
                 border-top: none;
                 border-radius: 0 0 5px 5px;
                 text-align: center;
             }
-
-            footer {
+            footer{
                 background-color: aqua;
             }
-
-
-            /* NavBar Media Start */
-            .navbar ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .navbar ul li {
-                margin-top: 15px;
-                margin-right: 125px;
-            }
-
-            /* NavBar Media End */
         }
     </style>
 </head>
-
 <body>
     <header>
         <nav class="navbar">
@@ -250,25 +210,16 @@
             <img src="../wwwroot/img/1.png" alt="">
         </div>
         <h1>Sayfama Hoşgeldiniz!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente nostrum reprehenderit architecto
-            placeat enim.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sapiente nostrum reprehenderit architecto placeat enim.</p>
     </section>
     <section id="Porforio">
         <h2>Porföy</h2>
         <p>İlgi Alanlarım</p>
         <div class="info-container">
-            <div class="info"><i class="fas fa-code"></i>
-                <p>Backend</p>
-            </div>
-            <div class="info"><i class="fas fa-code"></i>
-                <p>Graphic Design</p>
-            </div>
-            <div class="info"><i class="fas fa-code"></i>
-                <p>Game</p>
-            </div>
-            <div class="info"><i class="fas fa-code"></i>
-                <p>Mobile Apps</p>
-            </div>
+            <div class="info"><i class="fas fa-code"></i><p>Backend</p></div>
+            <div class="info"><i class="fas fa-code"></i><p>Graphic Design</p></div>
+            <div class="info"><i class="fas fa-code"></i><p>Game</p></div>
+            <div class="info"><i class="fas fa-code"></i><p>Mobile Apps</p></div>
         </div>
     </section>
     <section id="Education">
@@ -331,5 +282,4 @@
         <p>&copy;2025 CSS Site</p>
     </footer>
 </body>
-
 </html>
